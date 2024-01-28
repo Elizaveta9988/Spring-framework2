@@ -1,0 +1,71 @@
+@Entity
+@Table(name = "Person")
+public class Person {
+    @Id
+    @Column(name = "person_id")
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    private int id;
+    @NotEmpty(message = "name should not be empty")
+    @Size(min = 2,max = 32,message = "too long name")
+    @Column(name = "person_name")
+    private String name;
+    @Min(value = 0,message = "should be greater then 0")
+    @Column(name = "age")
+    private  int age;
+
+    public String getEmail() {
+        return email;
+    }
+
+    @NotEmpty(message = "name should not be empty")
+    @Email(message = "email isn't valid")
+    @Column(name = "email")
+    private String email;
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Person(String name, int age, String email) {
+        this.name = name;
+        this.age=age;
+        this.email=email;
+    }
+
+    public Person() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", email='" + email + '\'' +
+                '}';
+    }
+}
