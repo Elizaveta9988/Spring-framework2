@@ -1,5 +1,5 @@
 public class TelegramBot {
-    package ru.home.echobot;
+    package task1;
 
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,3 +1,4 @@
+package task1;
 public class AppTesting {
     public static void main(String[] args) {
         Configuration configuration = new Configuration().

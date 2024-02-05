@@ -1,3 +1,4 @@
+package task1;
 @Controller
 public class WelcomeController {
     @GetMapping("/")

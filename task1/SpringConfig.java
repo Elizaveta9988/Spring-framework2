@@ -1,3 +1,4 @@
+package task1;
 public class SpringConfig implements WebMvcConfigurer {
     private final ApplicationContext applicationContext;
     private final Environment environment;

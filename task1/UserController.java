@@ -1,3 +1,4 @@
+package task1;
 public class UserController {
     @Controller
 @RequestMapping("/api/v1/users")

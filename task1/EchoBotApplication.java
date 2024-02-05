@@ -1,5 +1,5 @@
 public class EchoBotApplication {
-    package ru.home.echobot;
+    package task1;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;

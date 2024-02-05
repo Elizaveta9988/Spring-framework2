@@ -1,3 +1,4 @@
+package task1;
 @Entity
 @Table(name = "Person")
 public class Person {
