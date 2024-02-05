@@ -1,0 +1,4 @@
+atabaseChangeLog:
+  - includeAll:
+      path: /changesets
+      relativeToChangelogFile: true
